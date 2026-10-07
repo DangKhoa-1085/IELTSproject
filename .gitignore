@@ -1,0 +1,128 @@
+﻿# ===========================
+# .gitignore — IELTS Platform
+# Stack: React/Vite + ASP.NET Core + PostgreSQL
+# ===========================
+
+# ─────────────────────────────
+# SECRETS & ENVIRONMENT
+# ─────────────────────────────
+.env
+.env.local
+.env.development
+.env.production
+.env.staging
+*.env
+appsettings.Development.json
+appsettings.Production.json
+appsettings.Staging.json
+secrets.json
+user-secrets.json
+
+# ─────────────────────────────
+# NODE / FRONTEND (React + Vite)
+# ─────────────────────────────
+node_modules/
+dist/
+dist-ssr/
+.vite/
+*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+.cache/
+
+# ─────────────────────────────
+# .NET / BACKEND (ASP.NET Core)
+# ─────────────────────────────
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+.vs/
+*.ncrunch*
+_NCrunch_*
+*.DotSettings.user
+TestResults/
+[Pp]ackages/
+*.nupkg
+*.snupkg
+*.nuget.targets
+*.nuget.props
+project.lock.json
+project.fragment.lock.json
+artifacts/
+*.log
+
+# Publish output
+publish/
+**/wwwroot/dist/
+
+# ─────────────────────────────
+# IDE & EDITORS
+# ─────────────────────────────
+# Visual Studio
+.vs/
+*.rsuser
+*.MigraDoc
+*.opencover.xml
+
+# Rider / JetBrains
+.idea/
+*.sln.iml
+
+# VS Code (giữ lại settings chia sẻ, bỏ settings cá nhân)
+.vscode/settings.json
+.vscode/launch.json
+.vscode/*.code-workspace
+!.vscode/extensions.json
+!.vscode/tasks.json
+
+# ─────────────────────────────
+# OS FILES
+# ─────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ─────────────────────────────
+# LOGS & TEMP
+# ─────────────────────────────
+logs/
+*.log
+*.tmp
+*.temp
+crash.txt
+
+# ─────────────────────────────
+# UPLOADS & MEDIA (user generated)
+# ─────────────────────────────
+uploads/
+wwwroot/uploads/
+media/
+storage/
+
+# ─────────────────────────────
+# CERTIFICATES & KEYS
+# ─────────────────────────────
+*.pfx
+*.pem
+*.key
+*.p12
+*.cer
+*.crt
+
+# ─────────────────────────────
+# MISC
+# ─────────────────────────────
+*.bak
+*.swp
+*.orig
